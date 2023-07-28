@@ -72,7 +72,8 @@ public class RomanNumerals
 
         for (int i = 0; i < romanNumeral.Length; ++i)
         {
-            if (i < romanNumeral.Length - 1 && romanValue.TryGetValue(romanNumeral.Substring(i, 2), out int value))
+            if (i < romanNumeral.Length - 1 &&
+                romanValue.TryGetValue(romanNumeral.Substring(i, 2), out int value))
             {
                 number += value;
                 ++i;
